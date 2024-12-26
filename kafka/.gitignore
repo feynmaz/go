@@ -1,1 +1,4 @@
 .vscode/
+
+conduktor/pg_data/*
+!*.gitkeep

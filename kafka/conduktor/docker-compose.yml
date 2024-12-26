@@ -14,6 +14,7 @@ services:
       POSTGRES_PASSWORD: "change_me"
       POSTGRES_HOST_AUTH_METHOD: "scram-sha-256"
 
+
   conduktor-platform:
     image: conduktor/conduktor-platform:1.17.2
     depends_on:
@@ -66,6 +67,9 @@ services:
 
 
 volumes:
-  pg_data: {}
+  pg_data: 
+    driver: local
+    driver_opts:
+      type: none
   conduktor_data: {}
   redpanda-0: {}
