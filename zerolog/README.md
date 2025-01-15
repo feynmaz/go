@@ -1,0 +1,1 @@
+# [Zerolog](https://pkg.go.dev/github.com/rs/zerolog) guide
